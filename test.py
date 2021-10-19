@@ -1,3 +1,5 @@
+print('valami')
+
 a = 2
 #print(type(a))
 
