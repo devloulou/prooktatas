@@ -1,9 +1,14 @@
 letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
+#print(list(letters))
+
+
 string_letters = str(letters)
 lists_letters = list(letters)
 tuples_letters = tuple(letters)
 sets_letters = set(letters)
+
+
 
 
 print("String: ", string_letters)

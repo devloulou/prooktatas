@@ -192,8 +192,8 @@ deduplication = list(set(test_list))
 str(test_list)
 
 print(test_list)
-print(type(test_list))
-exit()
+print(type(test_list)
+
 #print(my_dict.values())
 
 print(my_dict.keys())
