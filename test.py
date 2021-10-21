@@ -45,3 +45,20 @@ masodik_dict = dict()
 # set and collection
 # print(elso_lista, elso_dict,\
 #      elso_dict, elso_dict, elso_dict,elso_dict )
+
+my_list = [1,2,3, "Ricsi", [1,2,3]]
+
+my_list.pop(1)
+#my_list.remove([1,3,2])
+
+print(my_list)
+
+my_dict = {"kulcs": "érték"}
+
+
+import json
+
+print(json.dumps(my_dict))
+
+
+
