@@ -37,4 +37,20 @@ def outer_func():
 
      inner_func()
 
+#outer_func()
+
+a = 10
+def outer_func():
+     # This block is the local scope of outer_func()
+     # It's also the enclosing scope of inner_func()
+    a = 11
+    def inner_func():        
+        nonlocal a
+        print(a)
+        a = 12
+         # This block is the local scope of inner_func()
+        print(a)
+    inner_func()
+    print(a)
+
 outer_func()
