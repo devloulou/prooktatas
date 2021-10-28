@@ -1,4 +1,5 @@
 
+# ciklusok
 # comprehension és genetáror expression
 # függvények
 # scope (láthatóság egy formája)
