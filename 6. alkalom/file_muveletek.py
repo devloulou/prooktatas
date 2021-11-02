@@ -48,3 +48,16 @@ with open('C:\WORK\Prooktatás/1. lesson\prooktatas/6. alkalom/test_file.txt', '
 with open('alma.txt', 'w', encoding='utf-8') as f:
     f.write('Álmodtam egye érdekeset')
     f.write('Álmodtam egye érdekeset\n')
+
+
+with open('alma.txt', 'r', encoding='utf-8') as f:
+    print(f.tell())
+    for line in f:
+        pass
+    print(f.tell())
+
+
+with open('alma.txt', 'r', encoding='utf-8') as f:
+    lines = f.readlines()
+    print(lines)
+
