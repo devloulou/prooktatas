@@ -8,14 +8,14 @@ def read_txt(file_loc):
     except Exception as e:
         return False, str(e)
 
-    return data    
+    return data
 
 def write_to_txt(file_loc, message):
     try:
         with open(file_loc, "a", encoding='utf-8') as f:
             #f.writelines(message)
             if isinstance(message, str):
-                f.write(message)            
+                f.write(message)
             elif isinstance(message, (list, tuple)):
                 for item in message:
                     f.write(f"{item}\n")
