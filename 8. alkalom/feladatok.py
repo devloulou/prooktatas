@@ -17,4 +17,3 @@
 # töröljük a belongs to collection-t
 # töröljük a production companies részt
 # a bevételt alakítsuk át úgy, hogy állítsuk be a dollárt valutának
-
