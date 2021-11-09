@@ -17,3 +17,18 @@
 # töröljük a belongs to collection-t
 # töröljük a production companies részt
 # a bevételt alakítsuk át úgy, hogy állítsuk be a dollárt valutának
+
+
+lista = [1,2,3]
+
+lista2 = ['egy', 'ketto']
+
+lista3 = [1,2,3]
+
+print(id(lista) == id(lista3))
+
+my_dict = dict([('alma', 'körte')])
+my_dict = dict(zip(lista, lista2))
+
+
+print(my_dict)
