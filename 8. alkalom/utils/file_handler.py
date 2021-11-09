@@ -1,5 +1,6 @@
 import json
 import os
+
 # megnyitni egy json file-t és olvasni
 def open_json(file_path):
     data = None
@@ -38,7 +39,7 @@ def write_json(file_path, data):
 def delete_file(file_path):
     try:
         os.remove(file_path)
-    except FileNotFoundError:
+    except FileNotFoundError:        
         return False, 'File nem található!'
     except Exception as e:
         return False, str(e)
