@@ -30,7 +30,7 @@ def write_json(file_path, data):
         else:
             return False, 'Nem string'
     else:
-        return False, 'Nem data'
+        return False, 'Nem adtál meg adatokat a kiíráshoz'
 
     return True
 
@@ -46,8 +46,8 @@ def delete_file(file_path):
 
     return True
 
-# megadott dolgot töröl  a file-ból
-def delete_from_json():
+# megadott dolgot töröl a file-ból
+def delete_from_json(file_path, data):
     pass
 
 
