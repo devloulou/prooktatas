@@ -1,18 +1,15 @@
-import json
 import os
+import json
 
-# megnyitni egy json file-t és olvasni
-def open_json(file_path):
+def read_txt(file_path):
     data = None
     if os.path.exists(file_path):
-        with open(file_path, 'r', encoding='utf-8') as json_file:
-            data = json.load(json_file)
+        with open(file_path, 'r', encoding='utf-8') as file_object:
+            data = file_object.read()
     else:
         return False
     return data
 
-# kiír egy file-t: w - feltételezzük, hogy van root jog - minden file műveletet el tudunk végezni.
-# Oprendszer függő
 
 def write_json(file_path, data):
     if data:
@@ -46,23 +43,5 @@ def delete_file(file_path):
 
     return True
 
-# megadott dolgot töröl a file-ból
-def delete_from_json(file_path, data):
-    pass
-
-
 if __name__ == '__main__':
-    test_file = r"C:\WORK\Prooktatás\1. lesson\prooktatas\8. alkalom\movie_meta\A Nightmare on Elm Street.json"
-    #opened_file = open_json(test_file)
-
-    #writed_file = write_json('test_json_ricsi.json',{'alma': None,})
-
-    #print(writed_file)
-
-    #print(type(str(print)))
-
-    # deleted = delete_file('alma.txt')
-    # print(deleted)
-    test_dict = {"kulcs": "ertek"}
-    output = write_json("test_json_pelda.json", test_dict)
-    print(output)
+    write_json("tizedik_test_feladat.json", {"test": "test"})

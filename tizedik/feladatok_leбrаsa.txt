@@ -1,0 +1,31 @@
+A books könyvtárban lévő file-ok segítségével
+írjatok olyan programot ami a következő feladatokat végrehajtja:
+
+
+A könyvekről készítsétek el a következő statisztikákat:
+
+Mivel minden könyv angolul van, így számomra nem a pontosság a lényeg, sokkal inkább a megközelítése a feladatnak.
+
+1. Szavak száma: minden 2-nél hosszabb karaktert szónak tekintek. (Mivel angol az I, an, a is stb kifejezések nem érdekelnek)
+2. Sorok száma
+3. Oldalak száma: egy oldal kb. 3000 karakter
+4. A könyv szerzőjét: a file-okban az Author: utáni rész (nem néztem meg, hogy minden egyes file-ban szerepel)
+5. A könyv megjelenési dátuma: Release Date: utáni rész (nem néztem meg, hogy minden file-ban )
+
+Plusz feladat: a Counter package használatával -> ezt nem tanultuk, de egy kis googlizás után meglátjátok, hogy mennyire egyszerű
+az 5 leggyakrabban előforduló szót is keressétek meg
+
+Könyvenként hozzátok létre a mérőszámokat. Az elkészült mérőszámnokat írjátok ki json file-okba: a könyvek neve legyen
+
+Próbáljátok meg előállítani a "Legek" statisztikáját:
+
+Leghosszabb könyv
+Legrövidebb könyv
+Legrégebben kiadott könyv (dátumhasználatot nem tanultunk, így tökéletes megoldás, ha a megjelenés évét számként kezelitek)
+Legújabb könyv (dátumhasználatot nem tanultunk, így tökéletes megoldás, ha a megjelenés évét számként kezelitek)
+
+Töröljétek a legújabb könyvet, és a hozzá tartozó statisztikát is!
+Az előállított legek statisztikát írjátok ki egy json file-ba.
+
+Kérlek titeket, hogy most már minden megoldásnál ügyeljetek arra, hogy függvényeket fejlesszetek, ne pedig
+soronként legyen leprogramozva a feladat.
